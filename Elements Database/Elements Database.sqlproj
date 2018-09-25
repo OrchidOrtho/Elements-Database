@@ -57,5 +57,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Live" />
+    <Folder Include="Live\Views" />
+    <Folder Include="Live\Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Live\Views\dbo._jrpBasePersonAuditTrailEmailAddress.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Live\Scripts\Update BasePerson Email address from Audit Trail.sql" />
   </ItemGroup>
 </Project>
